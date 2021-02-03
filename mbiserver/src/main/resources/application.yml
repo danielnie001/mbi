@@ -1,0 +1,19 @@
+#server:
+#  port: 8082
+#  servlet:
+#    context-path: /mbi
+#  tomcat:
+#    uri-encoding: utf-8
+#my:
+#  user:
+#  - name: 李磊
+#    address: China
+#    favorites:
+#      - 足球
+#      - 徒步
+#      - coding
+#  - name: 刘备
+#    address: GZ
+#    favorites:
+#      - 游戏
+#      - 钢琴
