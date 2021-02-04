@@ -14,11 +14,14 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class MbiserverApplication {
 
-    @RequestMapping("/")
+    @RequestMapping("/hello")
     public String sayHello(){
         return "Hello, world";
     }
-
+    @RequestMapping("/hello2")
+    public String sayHello2(){
+        return "你好！";
+    }
 
     public static void main(String[] args) {
         SpringApplicationBuilder builder = new SpringApplicationBuilder(MbiserverApplication.class);
