@@ -1,19 +1,27 @@
-#server:
-#  port: 8082
-#  servlet:
-#    context-path: /mbi
-#  tomcat:
-#    uri-encoding: utf-8
-#my:
-#  user:
-#  - name: 李磊
-#    address: China
-#    favorites:
-#      - 足球
-#      - 徒步
-#      - coding
-#  - name: 刘备
-#    address: GZ
-#    favorites:
-#      - 游戏
-#      - 钢琴
+spring:
+  profiles:
+    active: dev
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:db2://192.168.56.12:50000/mbidb
+    username: mbi
+    password: mbi
+  mvc:
+    static-path-pattern: /static/**
+  web:
+    resources:
+      static-locations: classpath:/static/
+
+server:
+  error:
+    path: /error
+  servlet:
+    session:
+      timeout: 30m
+  tomcat:
+    uri-encoding: UTF-8
+    threads:
+      max: 500
+    basedir: E:/mbi
+mybatis:
+  mapper-locations: classpath:/mybatis-mapper/*Mapper.xml

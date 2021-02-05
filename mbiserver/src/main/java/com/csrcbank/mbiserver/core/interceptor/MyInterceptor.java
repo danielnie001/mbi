@@ -1,4 +1,4 @@
-package com.csrcbank.mbiserver.interceptor;
+package com.csrcbank.mbiserver.core.interceptor;
 
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
+ * 自定义拦截器
  * @author : Admin
  * @addTime : 13:46
  */

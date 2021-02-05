@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.csrcbank.mbiserver.dao.UserDao">
+    <resultMap id="SysUser" type="com.csrcbank.mbiserver.core.bean.SysUser">
+        <result column="USER_ID" property="userId"/>
+        <result column="USER_NAME" property="userName"/>
+        <result column="USER_PASS" property="userPass"/>
+        <result column="ROLE_ID" property="roleId"/>
+        <result column="USER_TELEPHONE" property="userTelephone"/>
+        <result column="USER_EMAIL" property="userEmail"/>
+        <result column="USER_GENGER" property="userGenger"/>
+        <result column="STATUS" property="status"/>
+        <result column="USER_ORGAN" property="userOrgan"/>
+        <result column="USER_ORGANS" property="userOrgans"/>
+        <result column="LOGIN_COUNT" property="loginCount"/>
+        <result column="LAST_LOGIN_DATE" property="lastLoginDate"/>
+        <result column="LAST_LOGIN_IP" property="lastLoginIP"/>
+        <result column="D_DATE" property="dDate"/>
+        <result column="D_DIP" property="dDip"/>
+        <result column="HEAD_IMAGE" property="headImage"/>
+        <result column="VALIDATE_CODE" property="validateCode"/>
+        <result column="DEVICE_ID" property="deviceId"/>
+        <result column="FIRST_LOGIN_DATE" property="firstLoginDate"/>
+        <result column="USER_FLAG" property="userFlag"/>
+    </resultMap>
+    <select id="getAllUsers" resultMap="SysUser">
+        select * from mbipro.sys_user fetch first 1 rows only
+    </select>
+</mapper>

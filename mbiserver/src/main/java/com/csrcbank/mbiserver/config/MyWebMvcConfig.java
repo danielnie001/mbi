@@ -1,7 +1,7 @@
 package com.csrcbank.mbiserver.config;
 
 
-import com.csrcbank.mbiserver.interceptor.MyInterceptor;
+import com.csrcbank.mbiserver.core.interceptor.MyInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
